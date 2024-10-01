@@ -1,0 +1,20 @@
+.menu {
+    box-shadow: 0 7px 5px #6ca8ecca;
+}
+
+.input:checked+.label .line {
+    opacity: 0;
+}
+
+.input:checked+.label::after {
+    transform: rotate(45deg);
+}
+
+.input:checked+.label::before {
+    transform: rotate(-45deg);
+}
+
+.input:checked ~ .menu {
+    height: 300px;
+    padding: 40px;
+}

@@ -1,0 +1,13 @@
+export interface IProduct {
+    id: number;
+    name: string;
+    price: number;
+    description: string;
+    image: string;
+    categoryId: number;
+    stock: number;
+};
+
+export interface IProductWhitQuantity extends IProduct {
+    quantity: number;
+};

@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input {
+  @apply bg-transparent w-60 border-b-2 outline-none border-[#f3f4f6] p-3 transition-all focus:border-[#6ca7ec]
+}
+
+.errorMessage {
+  @apply bg-red-400 top-1/2 shadow-md shadow-black right-full w-full py-3 px-5 rounded-xl mt-2
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #373737;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #414141
+  }
+}
+
+.height {
+  height: calc(100vh - 64px);
+}
+
+.heightPage {
+  height: calc(100vh - 264px);
+}
+
+.btn {
+  @apply py-3 text-[#f3f4f6] rounded-xl transition-all flex justify-center
+}
+
+.textStroke {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #6ca7ec;
+}
+
+.textStrokeWhite {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f3f4f6;
+}
+
+.scrollX {
+
+  &::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #373737;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #414141
+  }
+}
+
+.scrollY {
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #373737;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #414141
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .errorMessage {
+    @apply bg-red-400 absolute top-1/2 -translate-y-1/2 shadow-md shadow-black right-full w-[250px] py-3 px-5 mx-5 rounded-xl after:content-[""] after:w-5 after:h-5 after:bg-red-400 after:absolute after:left-[94%] after:top-1/2 after:-translate-y-1/2 after:rotate-45
+  }
+}

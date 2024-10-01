@@ -1,0 +1,19 @@
+.cardCategory:hover a div {
+    backdrop-filter: blur(0);
+    width: 75%;
+    height: 4rem;
+    border-top-right-radius: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .cardCategory:hover a div {
+        height: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .cardCategory:hover a div {
+        width: 100%;
+        height: 3rem;
+    }
+}
