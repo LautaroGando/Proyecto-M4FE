@@ -50,16 +50,6 @@ body {
   @apply py-3 text-[#f3f4f6] rounded-xl transition-all flex justify-center
 }
 
-.textStroke {
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #6ca7ec;
-}
-
-.textStrokeWhite {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #f3f4f6;
-}
-
 .scrollX {
 
   &::-webkit-scrollbar {

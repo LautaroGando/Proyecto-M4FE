@@ -22,11 +22,11 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-[100vh] flex flex-col justify-evenly">
-        <h2 className="text-5xl font-bold textStroke px-5 text-transparent sm:text-7xl sm:px-10">OFERTAS</h2>
+        <h2 className="text-5xl font-bold px-5 text-[#6ac7ec] sm:text-7xl sm:px-10">OFERTAS</h2>
         <Offers offers={offers} renderOffer={renderOffers} />
       </div>
       <div className="w-full h-auto flex flex-col justify-evenly sm:h-[100vh]">
-        <h2 className="text-5xl font-bold textStroke px-5 text-transparent sm:text-7xl sm:px-10">CATÁLOGO</h2>
+        <h2 className="text-5xl font-bold px-5 text-[#6ac7ec] sm:text-7xl sm:px-10">CATÁLOGO</h2>
         <Categories categories={categories} renderCategories={renderCategories}/>
       </div>
     </>

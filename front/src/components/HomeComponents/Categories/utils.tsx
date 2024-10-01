@@ -76,7 +76,7 @@ export const renderCategories = (categories: ICategoryHome): React.ReactElement 
             <Link className="relative w-[380px] h-[300px]" href={categories.link}>
                 <Image className="w-full h-[180px] object-cover" src={categories.image} alt="Imagen del producto" width={400} height={200} />
                 <div className="w-full h-full bg-[#212121c4] absolute bottom-0 flex justify-start items-end p-3 backdrop-blur-sm transition-all">
-                    <span className="textStrokeWhite text-xl translate-x-0 font-bold sm:text-2xl md:text-3xl">{categories.name}</span>
+                    <span className="text-[#f3f4f6] text-xl translate-x-0 font-bold sm:text-2xl md:text-3xl">{categories.name}</span>
                 </div>
             </Link>
         </div>
