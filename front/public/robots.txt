@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://proyecto-m4-fe.vercel.app/
+
+# Sitemaps
+Sitemap: https://proyecto-m4-fe.vercel.app/sitemap.xml
